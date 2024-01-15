@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
+
+/*  ============ GLOBAL SECTION ============= */
+:root {
+    --color-primary: #FF5400;
+    --color-heading: #131318;
+    --color-text: #5A5A5D;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Mulish', sans-serif;
+    font-size: 62.5%;
+}
+
+.text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+/*  ================= HEADER SECTION ============== */
+.header {
+    width: 85%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-box {
+    width: 50%;
+}
+
+.nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #424242;
+}
+
+.nav-link:first-child {
+    color: var(--color-primary);
+}
+
+/* ================ FOOTER SECTION ================== */
+
+.footer {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 8rem 3rem;
+    background-color: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+
+.footer-content {
+    padding: 3rem;
+    max-width: 87rem;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, .3)
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+}
+
+.logo-img {
+    width: 4rem;
+    height: auto;
+    margin-right: 1.5rem;
+}
+
+.logo-heading {
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.logo-span {}
+
+.footer-logo-container {
+    margin-top: 2rem;
+}
+
+.logo-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+/* hr {
+    border: none;
+    height: .1rem;
+    background-color: rgba(0, 0, 0, .1);
+} */
+
+.footer-copyright {
+    margin: 2rem 0;
+}
+
+.copy-text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--color-text);
+    text-transform: capitalize;
+}
+
+
+/* ====================== RESPONSIVE STYLES ================== */
+
+/* ================== TABLET OR MEDIUM SCREEN ==============  */
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .header .logo-box {
+        width: 100%;
+    }
+
+    .nav {
+        width: 90%;
+    }
+
+}
+
+/*  ================= MOBILE OR SMALL SCREEN ================= */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .header .logo-box {
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .footer {
+        padding: 5rem 2rem;
+    }
+}
