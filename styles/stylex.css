@@ -137,7 +137,8 @@ html {
     align-items: center;
 }
 
-.input, .select {
+.input,
+.select {
     padding: 1.5rem 2rem;
     width: 25%;
     border-radius: 5px;
@@ -191,6 +192,7 @@ html {
     max-width: 117rem;
     margin: 5rem auto;
 }
+
 /*
 .destination-text-container {
     width: 50%;
@@ -228,7 +230,7 @@ html {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    
+
 }
 
 .card-container {
@@ -259,7 +261,7 @@ html {
     background-color: rgb(195, 216, 223)
 }
 
-.card > figure {
+.card>figure {
     width: 5rem;
     height: 5rem;
     margin-bottom: 2rem;
@@ -297,6 +299,7 @@ html {
     padding: 3rem;
     border-radius: 5px;
 }
+
 .offer-box-2 {
     transform: rotateY(-180deg);
 }
@@ -371,8 +374,8 @@ html {
     width: 40%;
     padding: 3rem;
     border: 1px dotted orangered;
-    background-color: #FFF8F3;;
-
+    background-color: #FFF8F3;
+    border-radius: 5px;
 }
 
 .form {
@@ -389,8 +392,7 @@ html {
 .input {
     display: block;
     width: 100%;
-    background-color: rgba(19, 19, 24, 0.05);;
-    overflow: hidden;
+    background-color: rgba(19, 19, 24, 0.05);
 }
 
 .newsletter-label {
@@ -401,7 +403,7 @@ html {
     transition: all .3s;
 }
 
-.input:placeholder-shown + .newsletter-label {
+.input:placeholder-shown+.newsletter-label {
     transform: translate(2rem, -3.2rem);
     display: hidden;
     opacity: 0;
@@ -553,6 +555,19 @@ html {
         width: 95%;
     }
 
+    .newsletter {
+        width: 95%;
+    }
+
+    .form-container {
+        width: 50%;
+    }
+
+    .newsletter .input {
+        width: 100%;
+    }
+
+
 
 }
 
@@ -585,7 +600,7 @@ html {
     }
 
     .popular-tour {
-        flex-direction: column;        
+        flex-direction: column;
     }
 
     .footer {
@@ -614,5 +629,17 @@ html {
 
     .ferfect-video-container {
         height: 60vw;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .newsletter-img-containner {
+        width: 100%;
     }
 }
