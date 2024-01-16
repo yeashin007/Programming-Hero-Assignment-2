@@ -71,6 +71,7 @@ html {
     color: var(--color-white);
     border: none;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .btn-top-margin {
