@@ -487,9 +487,6 @@ html {
     transform-origin: bottom left;
 }
 
-
-
-
 /* ================ FOOTER SECTION ================== */
 
 .footer {
@@ -551,6 +548,77 @@ html {
     text-transform: capitalize;
 }
 
+
+/*  ================================ EXTRA SECTION ========================= */
+.review {
+    width: 80%;
+    max-width: 117rem;
+    margin: 8rem auto;
+    background-position: center;
+    padding: 5rem 0;
+
+}
+
+.review>.heading-2 {
+    text-align: center;
+}
+
+
+.review-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30rem;
+    background-color: var(--color-white);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .15);
+}
+
+.review-img-container {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+}
+
+.review-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.review-fig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.review-img-container:hover .review-fig {
+    top: 120%;
+    opacity: 1;
+}
+
+.review-img-container:hover .review-img {
+    transform: scale(1.1);
+    outline: 3px solid var(--color-primary);
+    outline-offset: .5rem;
+    filter: brightness(70%);
+}
 
 /* ====================== RESPONSIVE STYLES ================== */
 
@@ -633,6 +701,19 @@ html {
         width: 100%;
     }
 
+    .review {
+        width: 90%;
+    }
+
+    .review-all {
+        flex-direction: column;
+    }
+
+    .review-container {
+        gap: 3rem;
+        padding: 10rem;
+    }
+
 
 
 }
@@ -713,4 +794,6 @@ html {
     .newsletter-img-containner {
         width: 100%;
     }
+
+
 }
