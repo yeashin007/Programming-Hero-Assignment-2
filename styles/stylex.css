@@ -39,7 +39,14 @@ html {
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--color-heading);
-    margin-bottom: 1.8rem;
+    margin: 1.8rem 0;
+}
+
+.heading-4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
 }
 
 .text {
@@ -51,6 +58,23 @@ html {
 
 .list {
     font-size: 1.6rem;
+    padding: 0;
+    list-style-position: inside;
+    margin: 1.5rem 0;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    flex-shrink: 0;
+}
+
+.btn-top-margin {
+    margin-top: 2.5rem;
 }
 
 /*  ================= HEADER SECTION ============== */
@@ -135,15 +159,7 @@ html {
     margin-right: .5rem;
 }
 
-.btn {
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-size: 1.6rem;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    border: none;
-    flex-shrink: 0;
-}
+
 
 /*  ============================= POPULAR TOUR =================== */
 .popular-tour {
@@ -249,6 +265,100 @@ html {
     margin-bottom: 2rem;
 }
 
+/*  =============== DEALS SECTION ==================== */
+.deals {
+    width: 80%;
+    max-width: 117rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.deals-text-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.deals-offer-container {
+    width: 100%;
+    padding: 5rem;
+    border-radius: 5px;
+    margin: 2rem 0;
+    background-image: url(../Images/Group\ 39.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+}
+
+.offer-box {
+    width: 50%;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 3rem;
+    border-radius: 5px;
+}
+.offer-box-2 {
+    transform: rotateY(-180deg);
+}
+
+/* .container-1,
+.container-3 {
+    display: flex;
+    justify-content: end;
+} */
+
+.container-2 {
+    transform: rotateY(180deg);
+}
+
+.offer-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .8rem;
+}
+
+
+/* ========================= PERFECT SECTION ======================== */
+.perfect {
+    width: 80%;
+    max-width: 117rem;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.perfect-text-container {
+    flex: 1;
+}
+
+.ferfect-video-container {
+    width: 50%;
+    height: 40vw;
+    border-radius: 10px;
+}
+
+
+
+
+
 
 /* ================ FOOTER SECTION ================== */
 
@@ -326,6 +436,10 @@ html {
         padding: 2rem;
     }
 
+    .heading-2 {
+        font-size: 3.5rem;
+    }
+
     .header .logo-box {
         width: 100%;
     }
@@ -354,6 +468,22 @@ html {
     }
 
     .choose {
+        width: 95%;
+    }
+
+    .deals {
+        width: 95%;
+    }
+
+    .deals-offer-container {
+        padding: 10rem 2rem 2rem;
+    }
+
+    .offer-box {
+        width: 70%;
+    }
+
+    .perfect {
         width: 95%;
     }
 
@@ -398,5 +528,25 @@ html {
 
     .card {
         width: 90%;
-    } 
+    }
+
+    .deals-offer-container {
+        padding-top: 15rem;
+    }
+
+    .offer-box {
+        width: 100%;
+    }
+
+    .perfect {
+        flex-direction: column;
+    }
+
+    .perfect>* {
+        width: 100%;
+    }
+
+    .ferfect-video-container {
+        height: 60vw;
+    }
 }
