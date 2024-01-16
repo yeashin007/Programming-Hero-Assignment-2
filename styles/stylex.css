@@ -355,6 +355,72 @@ html {
     border-radius: 10px;
 }
 
+/* ===================== NEWSLETTER SECTION ======================== */
+
+.newsletter {
+    width: 80%;
+    max-width: 117rem;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-container {
+    width: 40%;
+    padding: 3rem;
+    border: 1px dotted orangered;
+    background-color: #FFF8F3;;
+
+}
+
+.form {
+    margin-top: 3rem;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
+.form-figure {
+    margin-bottom: 2rem;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background-color: rgba(19, 19, 24, 0.05);;
+    overflow: hidden;
+}
+
+.newsletter-label {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    transform: translate(2rem, 0);
+    transition: all .3s;
+}
+
+.input:placeholder-shown + .newsletter-label {
+    transform: translate(2rem, -3.2rem);
+    display: hidden;
+    opacity: 0;
+}
+
+
+.newsletter-img-containner {
+    width: 60%;
+}
+
+.newsletter-img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 4rem;
+}
 
 
 
