@@ -133,24 +133,35 @@ html {
     background-color: rgba(255, 255, 255, .3);
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .input,
-.select {
+.select,
+.input-name {
     padding: 1.5rem 2rem;
     width: 25%;
     border-radius: 5px;
     border: none;
 }
 
-.input::placeholder,
+.banner-input {
+    display: inline;
+    padding: 1.5rem 2rem;
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+}
+
+.banner .input::placeholder,
 .select option {
     color: var(--color-text);
     font-size: 1.4rem;
 }
 
+.input-name:focus,
 .input:focus,
 .select:focus {
     outline: none;
