@@ -87,6 +87,29 @@ html {
     align-items: center;
 }
 
+
+.humberg-span,
+.humberg-span::before,
+.humberg-span::after {
+    content: "";
+    display: none;
+    width: 3rem;
+    height: 2px;
+    background-color: black;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+}
+
+.humberg-span::before {
+    transform: translateY(-1rem);
+}
+
+.humberg-span::after {
+    transform: translateY(1rem);
+}
+
+
 .header .logo-box {
     width: 50%;
     justify-content: start;
@@ -711,7 +734,7 @@ html {
 
     .review-container {
         gap: 3rem;
-        padding: 10rem;
+        padding: 7rem;
     }
 
 
@@ -727,6 +750,7 @@ html {
     .header {
         width: 100%;
         padding: 2rem;
+        flex-direction: column;
     }
 
     .header .logo-box {
@@ -795,5 +819,29 @@ html {
         width: 100%;
     }
 
+    .review-container {
+        gap: 2rem;
+        padding: 2rem;
+    }
 
+    .humberg-span,
+    .humberg-span::before,
+    .humberg-span::after {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 2px;
+        background-color: black;
+        position: fixed;
+        top: 4.5rem;
+        right: 5rem;
+    }
+
+    .humberg-span::before {
+        transform: translateY(-1rem);
+    }
+
+    .humberg-span::after {
+        transform: translateY(1rem);
+    }
 }
