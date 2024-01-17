@@ -28,11 +28,23 @@ html {
     margin-bottom: 2.4rem;
 }
 
-.heading-2 {
+/* .heading-2 {
     font-size: 4.8rem;
     font-weight: 800;
     color: var(--color-heading);
     margin-bottom: 2rem;
+} */
+
+.heading-2 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: var(--color-heading);
+    margin-bottom: 2rem;    
+    background-image: linear-gradient(to bottom, #89f7ae, #18a878);
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+
 }
 
 .heading-3 {
@@ -311,7 +323,7 @@ html {
 }
 
 .choose-text-container {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 
@@ -360,7 +372,7 @@ html {
 }
 
 .deals-text-container {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 }
@@ -438,7 +450,7 @@ html {
 
 .ferfect-video-container {
     width: 50%;
-    height: 40vw;
+    height: 30vw;
     border-radius: 10px;
 }
 
@@ -591,7 +603,7 @@ html {
     margin: 8rem auto;
     background-position: center;
     padding: 5rem 0;
-
+    text-align: center;
 }
 
 .review>.heading-2 {
@@ -765,10 +777,6 @@ html {
         flex-direction: column;
     }
 
-    .header .logo-box {
-        width: 100%;
-    }
-
     .nav {
         display: none;
     }
@@ -778,12 +786,24 @@ html {
         gap: 2rem;
     }
 
-    .banner .form-banner>* {
+    .header .logo-box,
+    .banner .form-banner>*,
+    .offer-box,
+    .perfect>*,
+    .form-container,
+    .newsletter-img-containner {
         width: 100%;
     }
 
     .popular-tour {
         flex-direction: column;
+    }
+
+    .destination-text-container,
+    .choose-text-container,
+    .deals-text-container,
+    .card {
+        width: 90%;
     }
 
     .destination-gallary {
@@ -795,40 +815,20 @@ html {
         padding: 5rem 2rem;
     }
 
-    .card {
-        width: 90%;
-    }
+    
 
     .deals-offer-container {
         padding-top: 15rem;
     }
 
-    .offer-box {
-        width: 100%;
-    }
-
-    .perfect {
-        flex-direction: column;
-    }
-
-    .perfect>* {
-        width: 100%;
-    }
-
-    .ferfect-video-container {
-        height: 60vw;
-    }
-
+    .perfect,
     .newsletter {
         flex-direction: column;
     }
 
-    .form-container {
-        width: 100%;
-    }
-
-    .newsletter-img-containner {
-        width: 100%;
+    
+    .ferfect-video-container {
+        height: 60vw;
     }
 
     .review-container {
